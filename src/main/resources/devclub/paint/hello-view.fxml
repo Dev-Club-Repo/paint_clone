@@ -11,6 +11,11 @@
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
   </padding>
 
+  <!-- Context - Menüleiste -->
+  <!-- Zeichen - Menüleiste -->
+  <!-- Canvax - Bereich -->
+  <!-- Footer - Menüleiste -->
+
   <Label fx:id="welcomeText"/>
   <Button text="Hello!" onAction="#onHelloButtonClick"/>
 </VBox>

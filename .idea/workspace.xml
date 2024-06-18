@@ -4,33 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Markdown-Syntax.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/hello-view.fxml" afterDir="false" />
+    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Test PR">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="25181ce0-8250-4fe5-9c8b-2342ef565c49" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -53,9 +52,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
     "JUnit.HelloControllerTest.testOnHelloButtonClick.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop/feature/testpr",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -63,6 +66,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,29 +77,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Projekte\IntelliJ\paint" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="HelloControllerTest.testOnHelloButtonClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="paint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="devclub.paint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="devclub.paint" />
-      <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloControllerTest" />
-      <option name="METHOD_NAME" value="testOnHelloButtonClick" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.HelloControllerTest.testOnHelloButtonClick" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -111,8 +95,25 @@
       <option name="presentableId" value="Default" />
       <updated>1718714853301</updated>
       <workItem from="1718714854600" duration="1742000" />
-      <workItem from="1718732774742" duration="5361000" />
+      <workItem from="1718732774742" duration="8196000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files.">
+      <option name="closed" value="true" />
+      <created>1718740631416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718740631416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test PR">
+      <option name="closed" value="true" />
+      <created>1718741195347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718741195347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +121,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initila" />
-    <option name="LAST_COMMIT_MESSAGE" value="initila" />
+    <MESSAGE value="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files." />
+    <MESSAGE value="Test PR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test PR" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
