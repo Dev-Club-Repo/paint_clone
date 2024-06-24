@@ -24,6 +24,8 @@
 <!-- Footer - Menüleiste -->
 
 
+  <!-- When Label and Button are removed, also remove the Test in HelloControllerTest
+  and the Method and Property in Hello Controller-->
   <Label fx:id="welcomeText"/>
   <Button text="Hello!" onAction="#onHelloButtonClick"/>
 </VBox>

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="">
+    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Add Controller interface and implement in HelloController&#10;&#10;The added Controller interface includes an init() method. This is now implemented in HelloController which also includes the addition of a MenuBar. &#10;&#10;hello-view.fxml file has been renamed to main-window.fxml.&#10;&#10;On Application start the Controller.init() Methods is called">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,32 +57,52 @@
     "Application.HelloApplication.executor": "Run",
     "Application.Program.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ContextMenubarTest.createContextMenubar.executor": "Run",
+    "JUnit.ContextMenubarTest.executor": "Run",
+    "JUnit.ContextMenubarTest.test_ListSizeOfMenu.executor": "Run",
+    "JUnit.ContextMenubarTest.test_checkForValidImage.executor": "Run",
+    "JUnit.ContextMenubarTest.test_checkIfIconIsset.executor": "Run",
+    "JUnit.ContextMenubarTest.test_checkIfSubMenuExist.executor": "Run",
+    "JUnit.HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed.executor": "Run",
+    "JUnit.HelloControllerTest.testAddingMenuItemsToMenubar.executor": "Run",
     "JUnit.HelloControllerTest.testOnHelloButtonClick.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "feature/menubar",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Projekte/IntelliJ/paint/src/assets/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43333334",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projekte\IntelliJ\paint\src\assets\icons" />
+      <recent name="F:\Projekte\IntelliJ\paint\src\main\java\devclub\paint\context_menubar" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projekte\IntelliJ\paint\src" />
       <recent name="F:\Projekte\IntelliJ\paint" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="HelloControllerTest" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ContextMenubarTest">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloApplication" />
       <module name="paint" />
@@ -89,6 +110,102 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContextMenubarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextMenubarTest.test_ListSizeOfMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
+      <option name="METHOD_NAME" value="test_ListSizeOfMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextMenubarTest.test_checkForValidImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
+      <option name="METHOD_NAME" value="test_checkForValidImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextMenubarTest.test_checkIfIconIsset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
+      <option name="METHOD_NAME" value="test_checkIfIconIsset" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextMenubarTest.test_checkIfSubMenuExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
+      <option name="METHOD_NAME" value="test_checkIfSubMenuExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Program" />
+      <item itemvalue="JUnit.ContextMenubarTest" />
+      <item itemvalue="JUnit.ContextMenubarTest.test_ListSizeOfMenu" />
+      <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
+      <item itemvalue="JUnit.ContextMenubarTest.test_checkIfIconIsset" />
+      <item itemvalue="JUnit.ContextMenubarTest.test_checkIfSubMenuExist" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContextMenubarTest" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_checkIfIconIsset" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_ListSizeOfMenu" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_checkIfSubMenuExist" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -109,7 +226,7 @@
       <workItem from="1718714854600" duration="1742000" />
       <workItem from="1718732774742" duration="8196000" />
       <workItem from="1718751271637" duration="611000" />
-      <workItem from="1719137197304" duration="4912000" />
+      <workItem from="1719137197304" duration="20185000" />
     </task>
     <task id="LOCAL-00001" summary="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files.">
       <option name="closed" value="true" />
@@ -127,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718741195347</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Controller interface and implement in HelloController&#10;&#10;The added Controller interface includes an init() method. This is now implemented in HelloController which also includes the addition of a MenuBar. &#10;&#10;hello-view.fxml file has been renamed to main-window.fxml.&#10;&#10;On Application start the Controller.init() Methods is called">
+      <option name="closed" value="true" />
+      <created>1719222745523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719222745523</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +285,8 @@
     <MESSAGE value="initila" />
     <MESSAGE value="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files." />
     <MESSAGE value="Test PR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test PR" />
+    <MESSAGE value="Add Controller interface and implement in HelloController&#10;&#10;The added Controller interface includes an init() method. This is now implemented in HelloController which also includes the addition of a MenuBar. &#10;&#10;hello-view.fxml file has been renamed to main-window.fxml.&#10;&#10;On Application start the Controller.init() Methods is called" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Controller interface and implement in HelloController&#10;&#10;The added Controller interface includes an init() method. This is now implemented in HelloController which also includes the addition of a MenuBar. &#10;&#10;hello-view.fxml file has been renamed to main-window.fxml.&#10;&#10;On Application start the Controller.init() Methods is called" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

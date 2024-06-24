@@ -1,22 +1,36 @@
 package devclub.paint;
 
+import devclub.paint.context_menubar.ContextMenubar;
 import devclub.paint.interfaces.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelloController implements Controller {
 
-    @FXML
-    private MenuBar menuBar;
+    public HelloController(){
+        this.menuBar = new MenuBar();
+        this.welcomeText = new Label();
+    }
 
     @FXML
-    private Label welcomeText;
+    protected MenuBar menuBar;
+
+    @FXML
+    protected Label welcomeText;
+
+    private ContextMenubar contextMenubar;
+
+    private List<Menu> menus;
 
 
     @Override
     public void init() {
+        contextMenubar = ContextMenubar.getInstance();
         addMenuAndMenuItemsToMenubar();
     }
 
@@ -33,8 +47,9 @@ public class HelloController implements Controller {
      * @author Michael
      */
     private void addMenuAndMenuItemsToMenubar(){
-        menuBar.getMenus().add(new Menu("File"));
-        menuBar.getMenus().add(new Menu("Edit"));
-        menuBar.getMenus().add(new Menu("View"));
+        menus = contextMenubar.getMenuList();
+
+        menuBar.getMenus().addAll(menus);
     }
+
 }
