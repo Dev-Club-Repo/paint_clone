@@ -11,21 +11,18 @@ import org.junit.jupiter.api.Test;
 
 public class ContextMenubarTest{
 
-    private static HelloController helloController;
-
     @BeforeAll
     static void setUp() {
-        new Thread( () -> {
-            HelloApplication.main(new String[]{""});
-        }).start();
+        new Thread( () -> HelloApplication.main(new String[]{""})).start();
 
-        helloController = new HelloController();
+        HelloController helloController = new HelloController();
         helloController.init();
     }
 
     @Test
     void test_SameContextMenubar(){
-        assertEquals(ContextMenubar.getInstance(), ContextMenubar.getInstance());
+        assertSame(ContextMenubar.getInstance(), ContextMenubar.getInstance(), "Same object reference");
+        assertNotSame(ContextMenubar.getInstance(), new ContextMenubar(), "Different objects");
     }
 
     @Test
@@ -37,9 +34,9 @@ public class ContextMenubarTest{
 
     @Test
     void test_checkIfSubMenuExist(){
-        assertEquals(3,
+        assertEquals(4,
                 ContextMenubar.getInstance().getMenuList().getFirst().getItems().size(),
-                "'Datei'-SubMenu should have 3 elements");
+                "'Datei'-SubMenu should have 4 elements");
     }
 
     @Test

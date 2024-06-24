@@ -4,11 +4,7 @@ import devclub.paint.context_menubar.ContextMenubar;
 import devclub.paint.interfaces.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HelloController implements Controller {
 
@@ -20,18 +16,20 @@ public class HelloController implements Controller {
     @FXML
     protected MenuBar menuBar;
 
-    @FXML
+    @FXML // Will be removed, only for reference
     protected Label welcomeText;
 
     private ContextMenubar contextMenubar;
-
-    private List<Menu> menus;
 
 
     @Override
     public void init() {
         contextMenubar = ContextMenubar.getInstance();
-        addMenuAndMenuItemsToMenubar();
+
+        if(contextMenubar == null){
+            throw new RuntimeException("ContextMenubar is null");
+        }
+        addMenuAndSubItems();
     }
 
     /**
@@ -46,10 +44,8 @@ public class HelloController implements Controller {
      * Adding Menu-Items to the Menubar
      * @author Michael
      */
-    private void addMenuAndMenuItemsToMenubar(){
-        menus = contextMenubar.getMenuList();
-
-        menuBar.getMenus().addAll(menus);
+    private void addMenuAndSubItems(){
+        menuBar.getMenus().addAll(contextMenubar.getMenuList());
     }
 
 }

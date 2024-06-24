@@ -2,7 +2,6 @@ package devclub.paint.context_menubar;
 
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.util.ArrayList;
@@ -17,19 +16,21 @@ public class ContextMenubar {
 
     public static ContextMenubar contextMenubar = null;
 
+    private final int iconWidthAndHeight = 18;
+
     private final List<Menu> menuList;
 
 
-    private ContextMenubar(){
-        this.menuList = new ArrayList<Menu>();
+    ContextMenubar(){
+        this.menuList = new ArrayList<>();
 
         menuList.add(fileContextMenu());
         menuList.add(editContextMenu());
         menuList.add(viewContextMenu());
-        menuList.add(iconContextMenu("src/assets/icons/save_icon.png"));
-        menuList.add(iconContextMenu("src/assets/icons/back_icon.png"));
-        menuList.add(iconContextMenu("src/assets/icons/forward_icon.png"));
-        menuList.add(iconContextMenu("src/assets/icons/setting_icon.png"));
+        menuList.add(iconContextMenu("save_icon.png"));
+        menuList.add(iconContextMenu("back_icon.png"));
+        menuList.add(iconContextMenu("forward_icon.png"));
+        menuList.add(iconContextMenu("setting_icon.png"));
     }
 
     public static ContextMenubar getInstance(){
@@ -48,11 +49,12 @@ public class ContextMenubar {
     //<editor-fold desc="Context Menu Items">
     private Menu fileContextMenu() {
         Menu menu = new Menu("Datei");
-        MenuItem openMenuItem = new MenuItem("Öffnen");
-        MenuItem safeMenuItem = new MenuItem("Speichern");
-        MenuItem exitMenuItem = new MenuItem("Beenden");
+        MenuItem newMenuItem = new MenuItem("Neu", insertIcon("new_icon.png"));
+        MenuItem openMenuItem = new MenuItem("Öffnen", insertIcon("open_icon.png"));
+        MenuItem safeMenuItem = new MenuItem("Speichern", insertIcon("save_icon.png"));
+        MenuItem exitMenuItem = new MenuItem("Beenden", insertIcon("close_icon.png"));
 
-        menu.getItems().addAll(openMenuItem, safeMenuItem, exitMenuItem);
+        menu.getItems().addAll(newMenuItem, openMenuItem, safeMenuItem, exitMenuItem);
 
         return menu;
     }
@@ -60,9 +62,10 @@ public class ContextMenubar {
 
     private Menu editContextMenu() {
         Menu menu = new Menu("Bearbeiten");
-        MenuItem cutMenuItem = new MenuItem("Ausschneiden");
-        MenuItem copyMenuItem = new MenuItem("Kopieren");
-        MenuItem pasteMenuItem = new MenuItem("Einfügen");
+
+        MenuItem cutMenuItem = new MenuItem("Ausschneiden", insertIcon("cut_icon.png"));
+        MenuItem copyMenuItem = new MenuItem("Kopieren", insertIcon("copy_icon.png"));
+        MenuItem pasteMenuItem = new MenuItem("Einfügen", insertIcon("paste_icon.png"));
 
         menu.getItems().addAll(cutMenuItem, copyMenuItem, pasteMenuItem);
 
@@ -72,7 +75,8 @@ public class ContextMenubar {
 
     private Menu viewContextMenu() {
         Menu menu = new Menu("Ansicht");
-        Menu subMenuZoom = new Menu("Zoom In");
+
+        Menu subMenuZoom = new Menu("Zoom", insertIcon("zoom_in_icon.png") );
         MenuItem zoomInItem = new MenuItem("Vergrößern");
         MenuItem zoomOutItem = new MenuItem("Verkleinern");
 
@@ -89,16 +93,19 @@ public class ContextMenubar {
     }
 
     private Menu iconContextMenu(String path, String text){
-        Image icon = new Image("file:" + path);
-        ImageView iconView = new ImageView(icon);
-        iconView.setFitHeight(18);
-        iconView.setFitWidth(18);
-
-        Menu menu = new Menu(text, iconView);
-
-        return menu;
+        return new Menu(text, insertIcon(path));
     }
     //</editor-fold>
     //</editor-fold>
 
+    private ImageView insertIcon(String path){
+        ImageView icon =  new ImageView("file:src/assets/icons/" + path);
+        icon.setFitWidth(iconWidthAndHeight);
+        icon.setFitHeight(iconWidthAndHeight);
+        return icon;
+    }
+
+    /*
+     * ToDo Michael - 24.06.2024, 16:08 - Some Styling to fit the look of the context bar in paint and some refactoring
+     */
 }

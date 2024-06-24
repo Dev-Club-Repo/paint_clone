@@ -1,10 +1,6 @@
 package devclub.paint;
 
-import devclub.paint.interfaces.Controller;
-import javafx.application.Application;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -37,4 +33,7 @@ public class HelloControllerTest {
         helloController.onHelloButtonClick();
         assertEquals("Welcome to JavaFX Application!", helloController.welcomeText.getText());
     }
+    /*
+     * ToDo Michael - 24.06.2024, 21:19 - setUp()-Method in BaseClass to extend from to fix Thread-Error when all tests are run (?)
+     */
 }
