@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Add context menu bar and corresponding tests&#10;&#10;Added a dynamic, pattern-based context menu bar to the menubar of the application. This includes context menus for file operations, editing, and viewing. &#10;Also added related test cases to ensure proper implementation and functionality. (Still needs improvement)">
+    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Added some Icons for the Context-MenuBar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/devclub/paint/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/devclub/paint/HelloControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
         <option value="package-info" />
         <option value="Class" />
         <option value="module-info" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -37,10 +35,10 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="86d81ba7-bfda-4e15-8dcb-c5ed9b6637ab" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -88,6 +86,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Projekte/IntelliJ/paint/src/assets/icons",
+    "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,7 +95,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.43333334",
-    "settings.editor.selected.configurable": "proofread",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -106,6 +105,7 @@
       <recent name="F:\Projekte\IntelliJ\paint\src\main\java\devclub\paint\context_menubar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projekte\IntelliJ\paint\src\main\java\devclub\paint\context_menubar" />
       <recent name="F:\Projekte\IntelliJ\paint\src" />
       <recent name="F:\Projekte\IntelliJ\paint" />
     </key>
@@ -118,7 +118,7 @@
       <command value="HelloControllerTest" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContextMenubarTest">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloApplication" />
       <module name="paint" />
@@ -239,7 +239,8 @@
       <workItem from="1718714854600" duration="1742000" />
       <workItem from="1718732774742" duration="8196000" />
       <workItem from="1718751271637" duration="611000" />
-      <workItem from="1719137197304" duration="32322000" />
+      <workItem from="1719137197304" duration="33295000" />
+      <workItem from="1719310026818" duration="8114000" />
     </task>
     <task id="LOCAL-00001" summary="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files.">
       <option name="closed" value="true" />
@@ -273,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719237998345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor context menu bar and update tests&#10;&#10;This update refactors the context menu bar code for efficiency and readability. Icon management for the menu items has been streamlined and unnecessary variables were removed. Changes also include the introduction of icon files into menu items that enhance user interface visibility. In addition, relevant test cases were adjusted to wind up with the changes and further ensure the correct functionality of the system.">
+      <option name="closed" value="true" />
+      <created>1719263377591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263377591</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added some Icons for the Context-MenuBar">
+      <option name="closed" value="true" />
+      <created>1719263445318</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263445318</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +325,10 @@
     <MESSAGE value="Test PR" />
     <MESSAGE value="Add Controller interface and implement in HelloController&#10;&#10;The added Controller interface includes an init() method. This is now implemented in HelloController which also includes the addition of a MenuBar. &#10;&#10;hello-view.fxml file has been renamed to main-window.fxml.&#10;&#10;On Application start the Controller.init() Methods is called" />
     <MESSAGE value="Add context menu bar and corresponding tests&#10;&#10;Added a dynamic, pattern-based context menu bar to the menubar of the application. This includes context menus for file operations, editing, and viewing. &#10;Also added related test cases to ensure proper implementation and functionality. (Still needs improvement)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add context menu bar and corresponding tests&#10;&#10;Added a dynamic, pattern-based context menu bar to the menubar of the application. This includes context menus for file operations, editing, and viewing. &#10;Also added related test cases to ensure proper implementation and functionality. (Still needs improvement)" />
+    <MESSAGE value="Refactor context menu bar and update tests&#10;&#10;This update refactors the context menu bar code for efficiency and readability. Icon management for the menu items has been streamlined and unnecessary variables were removed. Changes also include the introduction of icon files into menu items that enhance user interface visibility. In addition, relevant test cases were adjusted to wind up with the changes and further ensure the correct functionality of the system." />
+    <MESSAGE value="Update input validation for registration form&#10;&#10;The diff indicates a change in the input validation logic in the registration form. Errors are now correctly passed to the front end, increasing the system's fault tolerance and improving user experience." />
+    <MESSAGE value="Added some Icons for the Context-MenuBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some Icons for the Context-MenuBar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

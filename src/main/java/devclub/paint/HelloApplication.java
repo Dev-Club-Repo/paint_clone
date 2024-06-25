@@ -17,6 +17,10 @@ public class HelloApplication extends Application {
         stage.setTitle("Paint Application by Dev-Club");
         stage.setScene(scene);
 
+        // Adding Stylesheet for Context Menubar
+        scene.getStylesheets().add("file:src/main/resources/devclub/paint/css/context_menubar.css");
+
+        // Initialize Components
         Controller controller = fxmlLoader.getController();
         controller.init();
 
