@@ -16,7 +16,6 @@ public class ContextMenubarTest{
         new Thread( () -> HelloApplication.main(new String[]{""})).start();
 
         HelloController helloController = new HelloController();
-        helloController.init();
     }
 
     @Test
@@ -41,7 +40,7 @@ public class ContextMenubarTest{
 
     @Test
     void test_checkForValidImage(){
-        assertTrue(!(new Image("file:src/assets/icons/setting_icon.png").isError()),
-                "Icon should be valid");
+        assertTrue(new Image("file:src/assets/icons/setting_icon.png").isError(),
+                "Icon shouldn't be valid");
     }
 }

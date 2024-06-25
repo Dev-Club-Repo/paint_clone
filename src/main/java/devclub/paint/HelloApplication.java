@@ -1,6 +1,5 @@
 package devclub.paint;
 
-import devclub.paint.interfaces.Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,16 +12,14 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-window.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1024, 786);
+        Scene scene = new Scene(fxmlLoader.load(), 1024, 768);
         stage.setTitle("Paint Application by Dev-Club");
         stage.setScene(scene);
+        stage.setMinWidth(480);
+        stage.setMinHeight(400);
 
         // Adding Stylesheet for Context Menubar
         scene.getStylesheets().add("file:src/main/resources/devclub/paint/css/context_menubar.css");
-
-        // Initialize Components
-        Controller controller = fxmlLoader.getController();
-        controller.init();
 
         stage.show();
     }

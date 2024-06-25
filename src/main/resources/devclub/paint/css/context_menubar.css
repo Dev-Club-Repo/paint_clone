@@ -3,6 +3,7 @@
   -fx-padding: 5 2;
 }
 
+/* Context Menu Dropdown */
 .context-menu{
   -fx-padding: 5px;
   -fx-background-color: #F6FAFC;
@@ -57,3 +58,16 @@
 }
 
 /*</editor-fold>*/
+
+#saveIcon {
+  -fx-border-radius: 0 !important;
+  -fx-padding: 5 15 5 15 !important;
+  -fx-border-style: hidden solid hidden solid !important;
+  -fx-border-width: 1px !important;
+  -fx-border-color: #DFE7EA !important;
+  -fx-min-height: 40px !important;
+}
+
+/*
+ * ToDo Michael - 25.06.2024, 23:29 - Needs the Dropdown Menu Transition
+ */

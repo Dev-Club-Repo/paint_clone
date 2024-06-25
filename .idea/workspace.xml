@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Added some Icons for the Context-MenuBar">
+    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/context_menubar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/back_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/back_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/close_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/close_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/copy_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/copy_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/cut_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/cut_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/forward_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/forward_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/new_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/new_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/open_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/open_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/paste_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/paste_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/save_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/save_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/setting_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/setting_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/zoom_in_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/zoom_in_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/zoom_out_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/zoom_out_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/css/context_menubar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/css/context_menubar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +40,7 @@
         <option value="Class" />
         <option value="module-info" />
         <option value="SCSS File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -105,6 +125,7 @@
       <recent name="F:\Projekte\IntelliJ\paint\src\main\java\devclub\paint\context_menubar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projekte\IntelliJ\paint\src\main\resources\devclub\paint" />
       <recent name="F:\Projekte\IntelliJ\paint\src\main\java\devclub\paint\context_menubar" />
       <recent name="F:\Projekte\IntelliJ\paint\src" />
       <recent name="F:\Projekte\IntelliJ\paint" />
@@ -118,7 +139,7 @@
       <command value="HelloControllerTest" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="JUnit.ContextMenubarTest">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloApplication" />
       <module name="paint" />
@@ -157,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContextMenubarTest.test_checkIconPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContextMenubarTest.test_checkForValidImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="paint" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +188,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
       <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
-      <option name="METHOD_NAME" value="test_checkIconPath" />
+      <option name="METHOD_NAME" value="test_checkForValidImage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,35 +209,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="devclub.paint in paint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="paint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="devclub.paint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="devclub.paint" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Program" />
+      <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
       <item itemvalue="JUnit.ContextMenubarTest" />
       <item itemvalue="JUnit.ContextMenubarTest.test_SameContextMenubar" />
-      <item itemvalue="JUnit.ContextMenubarTest.test_checkIconPath" />
       <item itemvalue="JUnit.HelloControllerTest" />
-      <item itemvalue="JUnit.devclub.paint in paint" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ContextMenubarTest" />
-        <item itemvalue="JUnit.ContextMenubarTest.test_SameContextMenubar" />
-        <item itemvalue="JUnit.ContextMenubarTest.test_checkIconPath" />
         <item itemvalue="JUnit.HelloControllerTest" />
-        <item itemvalue="JUnit.devclub.paint in paint" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
+        <item itemvalue="JUnit.ContextMenubarTest.test_SameContextMenubar" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +245,7 @@
       <workItem from="1718732774742" duration="8196000" />
       <workItem from="1718751271637" duration="611000" />
       <workItem from="1719137197304" duration="33295000" />
-      <workItem from="1719310026818" duration="8114000" />
+      <workItem from="1719310026818" duration="24652000" />
     </task>
     <task id="LOCAL-00001" summary="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files.">
       <option name="closed" value="true" />
@@ -290,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719263445318</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)">
+      <option name="closed" value="true" />
+      <created>1719318727952</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719318727952</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +341,8 @@
     <MESSAGE value="Refactor context menu bar and update tests&#10;&#10;This update refactors the context menu bar code for efficiency and readability. Icon management for the menu items has been streamlined and unnecessary variables were removed. Changes also include the introduction of icon files into menu items that enhance user interface visibility. In addition, relevant test cases were adjusted to wind up with the changes and further ensure the correct functionality of the system." />
     <MESSAGE value="Update input validation for registration form&#10;&#10;The diff indicates a change in the input validation logic in the registration form. Errors are now correctly passed to the front end, increasing the system's fault tolerance and improving user experience." />
     <MESSAGE value="Added some Icons for the Context-MenuBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some Icons for the Context-MenuBar" />
+    <MESSAGE value="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

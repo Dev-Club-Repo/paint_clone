@@ -10,27 +10,32 @@ import java.util.List;
 /**
  * Class to handle the Context_Menubar
  * Using Singleton Pattern
+ * Actual implementation replaced with .fxml file acts as Controller Class
+ *
  * @author Michael
  */
+
+/*
+ * ToDo Michael - 25.06.2024, 23:36 - Refactor this Class incl. the Tests
+ */
+
 public class ContextMenubar {
 
     public static ContextMenubar contextMenubar = null;
 
-    private final int iconWidthAndHeight = 18;
-
     private final List<Menu> menuList;
 
 
-    ContextMenubar(){
+    public ContextMenubar(){
         this.menuList = new ArrayList<>();
 
         menuList.add(fileContextMenu());
         menuList.add(editContextMenu());
         menuList.add(viewContextMenu());
-        menuList.add(iconContextMenu("save_icon.png"));
+        menuList.add(iconContextMenu("save_icon.png", "", "saveIcon"));
         menuList.add(iconContextMenu("back_icon.png"));
         menuList.add(iconContextMenu("forward_icon.png"));
-        menuList.add(iconContextMenu("setting_icon.png"));
+        menuList.add(iconContextMenu("setting_icon.png", "", "settingIcon"));
     }
 
     public static ContextMenubar getInstance(){
@@ -93,19 +98,23 @@ public class ContextMenubar {
     }
 
     private Menu iconContextMenu(String path, String text){
-        return new Menu(text, insertIcon(path));
+        return iconContextMenu(path, text, null);
+    }
+
+    private Menu iconContextMenu(String path, String text, String id){
+        Menu menu = new Menu(text, insertIcon(path));
+        menu.idProperty().set(id);
+        return menu;
     }
     //</editor-fold>
     //</editor-fold>
 
     private ImageView insertIcon(String path){
         ImageView icon =  new ImageView("file:src/assets/icons/" + path);
+        int iconWidthAndHeight = 18;
+
         icon.setFitWidth(iconWidthAndHeight);
         icon.setFitHeight(iconWidthAndHeight);
         return icon;
     }
-
-    /*
-     * ToDo Michael - 24.06.2024, 16:08 - Some Styling to fit the look of the context bar in paint and some refactoring
-     */
 }
