@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="devclub.paint.context_menubar.ContextMenubar">
+
+    <HBox id="test" maxWidth="Infinity" minWidth="-Infinity"
+          AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <!-- Left-Side -->
+        <MenuBar id="menuBar" maxWidth="Infinity" HBox.hgrow="SOMETIMES">
+            <Menu text="Datei">
+                <MenuItem text="Neu">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/new_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+                <MenuItem text="Öffnen">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/open_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+                <MenuItem text="Speichern">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/save_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+                <SeparatorMenuItem />
+
+                <MenuItem text="Beenden">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/close_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+            </Menu>
+
+            <Menu text="Bearbeiten">
+                <MenuItem text="Ausschneiden">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/cut_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+                <MenuItem text="Kopieren">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/copy_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+
+                <MenuItem text="Einfügen">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/paste_icon.png" />
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+            </Menu>
+
+            <Menu text="Ansicht">
+                <Menu text="Zoom">
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18">
+                            <Image url="@assets/icons/zoom_in_icon.png" />
+                        </ImageView>
+                    </graphic>
+
+                    <MenuItem text="Vergrößern" />
+                    <MenuItem text="Verkleinern" />
+
+                </Menu>
+            </Menu>
+
+            <Menu id="saveIcon">
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/save_icon.png" />
+                    </ImageView>
+                </graphic>
+            </Menu>
+
+            <Menu>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/back_icon.png" />
+                    </ImageView>
+                </graphic>
+            </Menu>
+
+            <Menu>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/forward_icon.png" />
+                    </ImageView>
+                </graphic>
+            </Menu>
+
+        </MenuBar>
+
+        <!-- Spacer -->
+        <HBox maxWidth="Infinity" HBox.hgrow="ALWAYS">
+            <Pane id="menuBar" maxWidth="Infinity" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <!-- Right-Side -->
+        <MenuBar id="menuBar" maxWidth="Infinity" HBox.hgrow="SOMETIMES">
+            <Menu>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/setting_icon.png" />
+                    </ImageView>
+                </graphic>
+            </Menu>
+        </MenuBar>
+
+    </HBox>
+
+</AnchorPane>

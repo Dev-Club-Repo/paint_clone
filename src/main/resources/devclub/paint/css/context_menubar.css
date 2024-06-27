@@ -1,0 +1,73 @@
+#menuBar {
+  -fx-background-color: #EDF5F9;
+  -fx-padding: 5 2;
+}
+
+/* Context Menu Dropdown */
+.context-menu{
+  -fx-padding: 5px;
+  -fx-background-color: #F6FAFC;
+
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-border-width: 1px;
+
+  -fx-border-color: transparent;
+}
+
+/*<editor-fold desc="Menu's">*/
+#menuBar .menu{
+  -fx-font-size: 14px;
+  -fx-border-width: 5px;
+
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-border-color: transparent;
+}
+
+#menuBar .menu:focused,
+#menuBar .menu:hover,
+#menuBar .menu:showing,
+#menuBar .menu:selected,
+#menubar, .menu .text,
+#menuBar .menu:hover .text,
+#menuBar .menu:showing .text,
+#menuBar .menu:selected .text,
+#menuBar .menu:focused .text{
+  -fx-fill: black;
+  -fx-background-color: #dde0e3;
+}
+/*</editor-fold>*/
+
+
+/*<editor-fold desc="MenuItems">*/
+#menuBar .menu .menu-item{
+  -fx-background-color: #F6FAFC;
+
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+  -fx-border-width: 3px;
+
+  -fx-border-color: transparent;
+}
+
+#menuBar .menu .menu-item:focused,
+#menuBar .menu .menu-item:focused .text {
+  -fx-background-color: #EDF0F3;
+  -fx-fill: black;
+}
+
+/*</editor-fold>*/
+
+#saveIcon {
+  -fx-border-radius: 0 !important;
+  -fx-padding: 5 15 5 15 !important;
+  -fx-border-style: hidden solid hidden solid !important;
+  -fx-border-width: 1px !important;
+  -fx-border-color: #DFE7EA !important;
+  -fx-min-height: 40px !important;
+}
+
+/*
+ * ToDo Michael - 25.06.2024, 23:29 - Needs the Dropdown Menu Transition
+ */

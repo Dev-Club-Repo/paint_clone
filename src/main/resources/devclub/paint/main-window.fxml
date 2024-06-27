@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="devclub.paint.HelloController" minWidth="400" >
+
+<!-- Context - Menüleiste -->
+  <fx:include source="context_menubar.fxml" />
+
+<!-- Zeichen - Menüleiste -->
+
+<!-- Canvas - Bereich -->
+
+<!-- Footer - Menüleiste -->
+
+
+  <!-- When Label and Button are removed, also remove the Test in HelloControllerTest
+  and the Method and Property in Hello Controller-->
+  <Label fx:id="welcomeText"/>
+  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
