@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1024, 768);
         stage.setTitle("Paint Application by Dev-Club");
         stage.setScene(scene);
-        stage.setMinWidth(600);
+        stage.setMinWidth(480);
         stage.setMinHeight(400);
 
         // Adding Stylesheet for Context Menubar
