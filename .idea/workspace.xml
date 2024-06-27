@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/context_menubar.fxml" afterDir="false" />
+    <list default="true" id="5e955489-b660-4b35-94bb-6fcb32afa553" name="Changes" comment="Refactored some Code and Styles&#10;- Moved ContextMenubar creationg to .fxml&#10;Class still remains as Controller Class, Class and Test will all be new written once EventHandling is a thing&#10;- Moved assets/icons into resources directory&#10;- Set minWidth and minHeight for Application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/back_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/back_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/close_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/close_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/copy_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/copy_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/cut_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/cut_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/forward_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/forward_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/new_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/new_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/open_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/open_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/paste_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/paste_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/save_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/save_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/setting_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/setting_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/zoom_in_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/zoom_in_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/zoom_out_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/assets/icons/zoom_out_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/devclub/paint/context_menubar/ContextMenubar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/css/context_menubar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/css/context_menubar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devclub/paint/main-window.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/devclub/paint/context_menubar/ContextMenubarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,48 +57,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Program.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.All in paint.executor": "Debug",
-    "JUnit.ContextMenubarTest (1).executor": "Run",
-    "JUnit.ContextMenubarTest.createContextMenubar.executor": "Run",
-    "JUnit.ContextMenubarTest.executor": "Run",
-    "JUnit.ContextMenubarTest.test_ListSizeOfMenu.executor": "Run",
-    "JUnit.ContextMenubarTest.test_SameContextMenubar.executor": "Run",
-    "JUnit.ContextMenubarTest.test_checkForValidImage.executor": "Run",
-    "JUnit.ContextMenubarTest.test_checkIconPath.executor": "Run",
-    "JUnit.ContextMenubarTest.test_checkIfIconIsset.executor": "Run",
-    "JUnit.ContextMenubarTest.test_checkIfSubMenuExist.executor": "Run",
-    "JUnit.HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed.executor": "Run",
-    "JUnit.HelloControllerTest.executor": "Run",
-    "JUnit.HelloControllerTest.testAddingMenuItemsToMenubar.executor": "Run",
-    "JUnit.HelloControllerTest.testOnHelloButtonClick.executor": "Run",
-    "JUnit.devclub.paint in paint.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "feature/menubar",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Projekte/IntelliJ/paint/src/assets/icons",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43333334",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Program.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.All in paint.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ContextMenubarTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.createContextMenubar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_ListSizeOfMenu.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_SameContextMenubar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_checkForValidImage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_checkIconPath.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_checkIfIconIsset.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContextMenubarTest.test_checkIfSubMenuExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloControllerTest.testAddingMenuItemsToMenubar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HelloControllerTest.testOnHelloButtonClick.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.devclub.paint in paint.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/menubar&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Projekte/IntelliJ/paint/src/assets/icons&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43333334&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Projekte\IntelliJ\paint\src\assets\icons" />
@@ -139,7 +119,7 @@
       <command value="HelloControllerTest" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContextMenubarTest">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloApplication" />
       <module name="paint" />
@@ -158,22 +138,6 @@
       <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
       <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContextMenubarTest.test_SameContextMenubar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="paint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="devclub.paint.context_menubar.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="devclub.paint.context_menubar" />
-      <option name="MAIN_CLASS_NAME" value="devclub.paint.context_menubar.ContextMenubarTest" />
-      <option name="METHOD_NAME" value="test_SameContextMenubar" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,19 +173,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint" />
+      <option name="MAIN_CLASS_NAME" value="devclub.paint.HelloControllerTest" />
+      <option name="METHOD_NAME" value="exampleTest_ChangingLabelText_OnButtonPressed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="devclub.paint in paint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="paint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="devclub.paint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="devclub.paint" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Program" />
+      <item itemvalue="JUnit.HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed" />
+      <item itemvalue="JUnit.devclub.paint in paint" />
       <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
       <item itemvalue="JUnit.ContextMenubarTest" />
-      <item itemvalue="JUnit.ContextMenubarTest.test_SameContextMenubar" />
       <item itemvalue="JUnit.HelloControllerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloControllerTest.exampleTest_ChangingLabelText_OnButtonPressed" />
+        <item itemvalue="JUnit.devclub.paint in paint" />
         <item itemvalue="JUnit.ContextMenubarTest" />
         <item itemvalue="JUnit.HelloControllerTest" />
         <item itemvalue="JUnit.ContextMenubarTest.test_checkForValidImage" />
-        <item itemvalue="JUnit.ContextMenubarTest.test_SameContextMenubar" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +241,9 @@
       <workItem from="1718732774742" duration="8196000" />
       <workItem from="1718751271637" duration="611000" />
       <workItem from="1719137197304" duration="33295000" />
-      <workItem from="1719310026818" duration="24652000" />
+      <workItem from="1719310026818" duration="25146000" />
+      <workItem from="1719401422303" duration="146000" />
+      <workItem from="1719485913103" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="Add Maven wrappers and set up new project with dependencies&#10;&#10;A new Maven project has been set up with files `mvnw`, `mvnw.cmd`, and `pom.xml`. The necessary project dependencies such as JavaFX, FormsFX, ControlsFX, and JUnit have also been added to `pom.xml`. Additionally, the project's `.gitignore` has been set up to ignore relevant IDE and build files.">
       <option name="closed" value="true" />
@@ -303,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719318727952</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactored some Code and Styles&#10;- Moved ContextMenubar creationg to .fxml&#10;Class still remains as Controller Class, Class and Test will all be new written once EventHandling is a thing&#10;- Moved assets/icons into resources directory&#10;- Set minWidth and minHeight for Application">
+      <option name="closed" value="true" />
+      <created>1719351400683</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719351400683</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +348,8 @@
     <MESSAGE value="Update input validation for registration form&#10;&#10;The diff indicates a change in the input validation logic in the registration form. Errors are now correctly passed to the front end, increasing the system's fault tolerance and improving user experience." />
     <MESSAGE value="Added some Icons for the Context-MenuBar" />
     <MESSAGE value="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CSS for Context Menubar and link stylesheet&#10;&#10;Missing special styling for safe-menu (border left and right) and setting-menu (alignment at the end of the menubar)" />
+    <MESSAGE value="Refactored some Code and Styles&#10;- Moved ContextMenubar creationg to .fxml&#10;Class still remains as Controller Class, Class and Test will all be new written once EventHandling is a thing&#10;- Moved assets/icons into resources directory&#10;- Set minWidth and minHeight for Application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored some Code and Styles&#10;- Moved ContextMenubar creationg to .fxml&#10;Class still remains as Controller Class, Class and Test will all be new written once EventHandling is a thing&#10;- Moved assets/icons into resources directory&#10;- Set minWidth and minHeight for Application" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
