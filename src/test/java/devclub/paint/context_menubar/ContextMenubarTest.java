@@ -2,21 +2,12 @@ package devclub.paint.context_menubar;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import devclub.paint.HelloApplication;
-import devclub.paint.HelloController;
+import devclub.paint.BaseTest;
 import javafx.scene.image.Image;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
-public class ContextMenubarTest{
-
-    @BeforeAll
-    static void setUp() {
-        new Thread( () -> HelloApplication.main(new String[]{""})).start();
-
-        HelloController helloController = new HelloController();
-    }
+public class ContextMenubarTest extends BaseTest {
 
     @Test
     void test_SameContextMenubar(){

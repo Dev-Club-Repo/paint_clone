@@ -5,24 +5,19 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
-public class HelloControllerTest {
-
-    private static HelloController helloController;
+/**
+ * Example:
+ */
+public class HelloControllerTest extends BaseTest{
 
     /**
-     * Set up the Application in the Background to Test it
+     * Set up the specific test requirements to run the test
      *
-     * Initialized a Controller to test
      * @author Michael
      */
     @BeforeAll
-    static void setUp() {
-        new Thread( () -> {
-            HelloApplication.main(new String[]{""});
-        }).start();
-
-        helloController = new HelloController();
+    static void setUpTest() {
+//        Set your test requirements here
     }
 
     /**
@@ -30,10 +25,7 @@ public class HelloControllerTest {
      */
     @Test
     void exampleTest_ChangingLabelText_OnButtonPressed(){
-        helloController.onHelloButtonClick();
-        assertEquals("Welcome to JavaFX Application!", helloController.welcomeText.getText());
+        BaseTest.helloController.onHelloButtonClick();
+        assertEquals("Welcome to JavaFX Application!", BaseTest.helloController.welcomeText.getText());
     }
-    /*
-     * ToDo Michael - 24.06.2024, 21:19 - setUp()-Method in BaseClass to extend from to fix Thread-Error when all tests are run (?)
-     */
 }
