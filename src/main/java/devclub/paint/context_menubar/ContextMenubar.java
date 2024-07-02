@@ -1,5 +1,6 @@
 package devclub.paint.context_menubar;
 
+import javafx.application.Platform;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
@@ -116,5 +117,9 @@ public class ContextMenubar {
         icon.setFitWidth(iconWidthAndHeight);
         icon.setFitHeight(iconWidthAndHeight);
         return icon;
+    }
+
+    public void exitApplication(){
+        Platform.exit();
     }
 }

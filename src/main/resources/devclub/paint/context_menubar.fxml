@@ -14,7 +14,7 @@
         <!-- Left-Side -->
         <MenuBar id="menuBar" maxWidth="Infinity" HBox.hgrow="SOMETIMES">
             <Menu text="Datei">
-                <MenuItem text="Neu">
+                <MenuItem text="Neu" accelerator="Shortcut+N">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/new_icon.png" />
@@ -22,7 +22,7 @@
                     </graphic>
                 </MenuItem>
 
-                <MenuItem text="Öffnen">
+                <MenuItem text="Öffnen" accelerator="Shortcut+O">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/open_icon.png" />
@@ -30,7 +30,7 @@
                     </graphic>
                 </MenuItem>
 
-                <MenuItem text="Speichern">
+                <MenuItem text="Speichern" accelerator="Shortcut+S">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/save_icon.png" />
@@ -40,7 +40,7 @@
 
                 <SeparatorMenuItem />
 
-                <MenuItem text="Beenden">
+                <MenuItem text="Beenden" onAction="#exitApplication" accelerator="Alt+F4">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/close_icon.png" />
@@ -51,7 +51,7 @@
             </Menu>
 
             <Menu text="Bearbeiten">
-                <MenuItem text="Ausschneiden">
+                <MenuItem text="Ausschneiden" accelerator="Shortcut+X">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/cut_icon.png" />
@@ -59,7 +59,7 @@
                     </graphic>
                 </MenuItem>
 
-                <MenuItem text="Kopieren">
+                <MenuItem text="Kopieren" accelerator="Shortcut+C">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/copy_icon.png" />
@@ -67,7 +67,7 @@
                     </graphic>
                 </MenuItem>
 
-                <MenuItem text="Einfügen">
+                <MenuItem text="Einfügen" accelerator="Shortcut+V">
                     <graphic>
                         <ImageView fitHeight="18" fitWidth="18">
                             <Image url="@assets/icons/paste_icon.png" />
@@ -84,13 +84,13 @@
                         </ImageView>
                     </graphic>
 
-                    <MenuItem text="Vergrößern" />
-                    <MenuItem text="Verkleinern" />
+                    <MenuItem text="Vergrößern" accelerator="Shortcut+PageUp" />
+                    <MenuItem text="Verkleinern" accelerator="Shortcut+PageDown" />
 
                 </Menu>
             </Menu>
 
-            <Menu id="saveIcon">
+            <Menu id="saveIcon" accelerator="Shortcut+S" >
                 <graphic>
                     <ImageView fitHeight="18" fitWidth="18">
                         <Image url="@assets/icons/save_icon.png" />
@@ -98,7 +98,7 @@
                 </graphic>
             </Menu>
 
-            <Menu>
+            <Menu accelerator="Shortcut+Z">
                 <graphic>
                     <ImageView fitHeight="18" fitWidth="18">
                         <Image url="@assets/icons/back_icon.png" />
@@ -106,7 +106,7 @@
                 </graphic>
             </Menu>
 
-            <Menu>
+            <Menu accelerator="Shortcut+Y">
                 <graphic>
                     <ImageView fitHeight="18" fitWidth="18">
                         <Image url="@assets/icons/forward_icon.png" />
