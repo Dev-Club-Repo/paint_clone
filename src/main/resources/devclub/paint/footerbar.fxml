@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
@@ -12,8 +12,74 @@
             prefHeight="400.0" prefWidth="600.0">
 
     <HBox id="test" maxWidth="Infinity" minWidth="-Infinity"
-    AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
-    AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+          AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" >
+
+        <!--        Cursorposition-->
+        <HBox>
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@assets/icons/cursor_icon.png"/>
+            </ImageView>
+            <Label text="Cursor"/>
+        </HBox>
+
+        <!--        Zeichentoolgröße-->
+        <HBox>
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@assets/icons/tool_size_icon.png"/>
+            </ImageView>
+            <Label text="Tool"/>
+        </HBox>
+
+        <!--        Canvasgröße-->
+        <HBox>
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@assets/icons/canvas_size_icon.png"/>
+            </ImageView>
+            <Label text="Canvas"/>
+        </HBox>
+
+        <!--        Dateigröße-->
+        <HBox>
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@assets/icons/save_icon.png"/>
+            </ImageView>
+            <Label text="Sichtbar?"/>
+        </HBox>
+
+        <HBox HBox.hgrow="ALWAYS"/>
+
+        <HBox>
+            <Button>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/resize_icon.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <ComboBox fx:id="dropDownMenu" editable="true" >
+
+            </ComboBox>
+
+            <Button>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/zoom_out_icon.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Slider fx:id="zoomSlider" valueChanging="true" />
+
+            <Button>
+                <graphic>
+                    <ImageView fitHeight="18" fitWidth="18">
+                        <Image url="@assets/icons/zoom_in_icon.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
 
     </HBox>
 </AnchorPane>

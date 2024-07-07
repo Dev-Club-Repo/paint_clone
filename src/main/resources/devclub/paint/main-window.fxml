@@ -15,7 +15,6 @@
 <!-- Canvas - Bereich -->
 
 <!-- Footer - Menüleiste -->
-
   <fx:include source="footerbar.fxml" />
 
 
