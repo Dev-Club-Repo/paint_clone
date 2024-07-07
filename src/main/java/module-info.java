@@ -14,4 +14,7 @@ module devclub.paint {
 
     opens devclub.paint.context_menubar to javafx.fxml;
     exports devclub.paint.context_menubar;
+
+    opens devclub.paint.footerbar to javafx.fxml;
+    exports devclub.paint.footerbar;
 }
