@@ -5,21 +5,22 @@
 <?import javafx.scene.control.Button?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
-      fx:controller="devclub.paint.HelloController" minWidth="400" >
+      fx:controller="devclub.paint.HelloController" minWidth="400">
 
-<!-- Context - Menüleiste -->
-  <fx:include source="context_menubar.fxml" />
+    <!-- Context - Menüleiste -->
+    <fx:include source="context_menubar.fxml" VBox.vgrow="NEVER"/>
 
-<!-- Zeichen - Menüleiste -->
+    <!-- Zeichen - Menüleiste -->
 
-<!-- Canvas - Bereich -->
+    <!-- Canvas - Bereich -->
 
-<!-- Footer - Menüleiste -->
-  <fx:include source="footerbar.fxml" />
+    <!-- When Label and Button are removed, also remove the Test in HelloControllerTest
+and the Method and Property in Hello Controller-->
+    <Label fx:id="welcomeText"/>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+
+    <!-- Footer - Menüleiste -->
+    <fx:include source="footerbar.fxml" VBox.vgrow="NEVER" />
 
 
-  <!-- When Label and Button are removed, also remove the Test in HelloControllerTest
-  and the Method and Property in Hello Controller-->
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
 </VBox>

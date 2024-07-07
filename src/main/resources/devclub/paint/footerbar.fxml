@@ -9,9 +9,9 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="devclub.paint.footerbar.Footerbar"
-            prefHeight="400.0" prefWidth="600.0">
+            stylesheets="@css/footerbar.css">
 
-    <HBox id="test" maxWidth="Infinity" minWidth="-Infinity"
+    <HBox id="footer" maxWidth="Infinity" minWidth="-Infinity"
           AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
           AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" >
 
@@ -40,7 +40,7 @@
         </HBox>
 
         <!--        Dateigröße-->
-        <HBox>
+        <HBox fx:id="saveBox">
             <ImageView fitHeight="18" fitWidth="18">
                 <Image url="@assets/icons/save_icon.png"/>
             </ImageView>

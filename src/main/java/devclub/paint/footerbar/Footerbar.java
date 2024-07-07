@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Slider;
+import javafx.scene.layout.HBox;
 
 import static devclub.paint.enums.Operation.*;
 
@@ -16,6 +17,7 @@ public class Footerbar {
 
     private static final int MAX_VALUE_SLIDER = 800;
     private static final int MIN_VALUE_SLIDER = 10;
+    private static final int BREAKPOINT_ZOOMBUTTON = 200;
 
     @FXML
     public ComboBox<String> dropDownMenu;
@@ -32,11 +34,16 @@ public class Footerbar {
     public Button zoomOutButton;
 
     @FXML
+    public HBox saveBox;
+
+    @FXML
     protected void initialize() {
         addDropDownMenuItems();
         configureDropdown();
         configureSlider();
         configureButtons();
+
+        saveBox.visibleProperty().setValue(false);
     }
 
     private void addDropDownMenuItems() {
@@ -91,33 +98,41 @@ public class Footerbar {
         zoomInButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                setCurrentZoom(zoomSlider.getValue() + incrementalValue(INCREMENT));
+                setCurrentZoom(zoomSlider.getValue() + zoomOperation(INCREMENT));
             }
         });
 
         zoomOutButton.setOnAction(new EventHandler<>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                setCurrentZoom(zoomSlider.getValue() - incrementalValue(DECREMENT));
+                setCurrentZoom(zoomSlider.getValue() - zoomOperation(DECREMENT));
             }
         });
     }
 
-    private double incrementalValue(Operation operation){
+    private double zoomOperation(Operation operation){
         double currentZoomValue = zoomSlider.getValue();
         int modulo = 10;
 
-        if (currentZoomValue >= 200){
+        if (currentZoomValue >= BREAKPOINT_ZOOMBUTTON){
             modulo = 25;
         }
 
-        if ((currentZoomValue % modulo) != 0 ){
-            if (operation == DECREMENT){
-                return currentZoomValue % modulo;
-            }
-            return modulo - (currentZoomValue % modulo);
-        }
-        return modulo;
-    }
+        switch (operation) {
+            case INCREMENT:
+                return modulo - (currentZoomValue % modulo);
 
+            case DECREMENT:
+                if (currentZoomValue == BREAKPOINT_ZOOMBUTTON){
+                    modulo = 10;
+                }
+
+                if( currentZoomValue % modulo != 0){
+                    return (currentZoomValue % modulo);
+                }
+
+            default:
+                return modulo;
+        }
+    }
 }
