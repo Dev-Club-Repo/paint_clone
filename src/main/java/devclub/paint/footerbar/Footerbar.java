@@ -1,10 +1,16 @@
 package devclub.paint.footerbar;
 
+import devclub.paint.enums.Operation;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Slider;
+
+import static devclub.paint.enums.Operation.*;
 
 public class Footerbar {
 
@@ -20,10 +26,17 @@ public class Footerbar {
     public Slider zoomSlider;
 
     @FXML
+    public Button zoomInButton;
+
+    @FXML
+    public Button zoomOutButton;
+
+    @FXML
     protected void initialize() {
         addDropDownMenuItems();
-        configureSlider();
         configureDropdown();
+        configureSlider();
+        configureButtons();
     }
 
     private void addDropDownMenuItems() {
@@ -52,18 +65,15 @@ public class Footerbar {
 
         zoomSlider.setMax(MAX_VALUE_SLIDER);
         zoomSlider.setMin(MIN_VALUE_SLIDER);
+        zoomSlider.setValue(100);
     }
 
     private void configureDropdown(){
         dropDownMenu.valueProperty().addListener(new ChangeListener<>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
-
                 try {
-                    System.out.println("String s: " + s);
-                    System.out.println("String t1: " + t1);
                     double zoomValue = Double.parseDouble(t1.replace("%", "").trim());
-
                     setCurrentZoom(zoomValue);
 
                 } catch (NullPointerException | NumberFormatException ignored){
@@ -75,6 +85,39 @@ public class Footerbar {
                 }
             }
         });
+    }
+
+    private void configureButtons(){
+        zoomInButton.setOnAction(new EventHandler<>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                setCurrentZoom(zoomSlider.getValue() + incrementalValue(INCREMENT));
+            }
+        });
+
+        zoomOutButton.setOnAction(new EventHandler<>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                setCurrentZoom(zoomSlider.getValue() - incrementalValue(DECREMENT));
+            }
+        });
+    }
+
+    private double incrementalValue(Operation operation){
+        double currentZoomValue = zoomSlider.getValue();
+        int modulo = 10;
+
+        if (currentZoomValue >= 200){
+            modulo = 25;
+        }
+
+        if ((currentZoomValue % modulo) != 0 ){
+            if (operation == DECREMENT){
+                return currentZoomValue % modulo;
+            }
+            return modulo - (currentZoomValue % modulo);
+        }
+        return modulo;
     }
 
 }

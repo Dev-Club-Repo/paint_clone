@@ -62,7 +62,7 @@
 
             </ComboBox>
 
-            <Button>
+            <Button fx:id="zoomOutButton">
                 <graphic>
                     <ImageView fitHeight="18" fitWidth="18">
                         <Image url="@assets/icons/zoom_out_icon.png"/>
@@ -72,7 +72,7 @@
 
             <Slider fx:id="zoomSlider" valueChanging="true" />
 
-            <Button>
+            <Button fx:id="zoomInButton">
                 <graphic>
                     <ImageView fitHeight="18" fitWidth="18">
                         <Image url="@assets/icons/zoom_in_icon.png"/>

@@ -17,4 +17,7 @@ module devclub.paint {
 
     opens devclub.paint.footerbar to javafx.fxml;
     exports devclub.paint.footerbar;
+
+    exports devclub.paint.enums;
+    opens devclub.paint.enums to javafx.fxml;
 }
