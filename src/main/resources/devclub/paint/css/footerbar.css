@@ -3,4 +3,64 @@
     -fx-padding: 5 2;
 }
 
+HBox{
+    -fx-padding: 5 10;
+}
 
+HBox .rightBorder {
+    -fx-border-style: hidden solid hidden hidden;
+    -fx-border-width: 1px;
+    -fx-border-color: #DFE7EA;
+    -fx-min-width: 120px;
+    -fx-alignment: center;
+}
+
+HBox Label{
+    -fx-padding: 0 0 0 5;
+    -fx-font-size: 10px;
+}
+
+HBox HBox{
+    -fx-spacing: 5;
+    -fx-alignment: center;
+    -fx-padding: 5;
+}
+
+HBox HBox Button {
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-color: transparent;
+    -fx-padding: 2 10;
+    -fx-font-size: 10;
+}
+
+HBox HBox Button:hover
+{
+    -fx-border-style: solid;
+    -fx-border-color: #BBC9C4;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-color: #e5e5e5;
+}
+
+HBox HBox ComboBox {
+    -fx-pref-width: 75px;
+}
+
+HBox HBox Slider .track {
+    -fx-pref-height: 3px;
+}
+
+HBox HBox Slider .thumb {
+    -fx-border-color: white;
+    -fx-border-width: 6px;
+    -fx-border-radius: 90;
+    -fx-background-color: #0067C0;
+    -fx-pref-width: 19px;
+    -fx-pref-height: 19px;
+}
+
+HBox HBox Slider .thumb:hover {
+    -fx-border-width: 3px;
+}

@@ -16,7 +16,7 @@
           AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" >
 
         <!--        Cursorposition-->
-        <HBox>
+        <HBox HBox.hgrow="SOMETIMES" styleClass="rightBorder">
             <ImageView fitHeight="18" fitWidth="18">
                 <Image url="@assets/icons/cursor_icon.png"/>
             </ImageView>
@@ -24,7 +24,7 @@
         </HBox>
 
         <!--        Zeichentoolgröße-->
-        <HBox>
+        <HBox HBox.hgrow="SOMETIMES" styleClass="rightBorder">
             <ImageView fitHeight="18" fitWidth="18">
                 <Image url="@assets/icons/tool_size_icon.png"/>
             </ImageView>
@@ -32,7 +32,7 @@
         </HBox>
 
         <!--        Canvasgröße-->
-        <HBox>
+        <HBox HBox.hgrow="SOMETIMES" styleClass="rightBorder">
             <ImageView fitHeight="18" fitWidth="18">
                 <Image url="@assets/icons/canvas_size_icon.png"/>
             </ImageView>
@@ -40,7 +40,7 @@
         </HBox>
 
         <!--        Dateigröße-->
-        <HBox fx:id="saveBox">
+        <HBox HBox.hgrow="SOMETIMES" fx:id="saveBox" styleClass="rightBorder">
             <ImageView fitHeight="18" fitWidth="18">
                 <Image url="@assets/icons/save_icon.png"/>
             </ImageView>
